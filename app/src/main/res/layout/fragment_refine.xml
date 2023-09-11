@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".RefineFragment">
+
+    <TextView
+        android:id="@+id/seltext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/spnr"
+        tools:ignore="InvalidId"
+        android:layout_below="@id/seltext"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Available | Hey Let Us Connect"
+        app:hintTextColor="#5C5959"
+        app:hintEnabled="true"
+        style="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+         <AutoCompleteTextView
+             android:background="@drawable/shape"
+             android:layout_width="match_parent"
+             android:layout_height="45dp"
+             android:inputType="none"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/aystext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Your Status"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_below="@+id/spnr"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtbn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="250"
+        android:layout_below="@+id/aystext"
+        app:passwordToggleEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtAys"
+            android:hint="@string/edttext"
+            android:maxLength="250"
+            android:gravity="top|start"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColorHint="#6E6A6A"
+            android:background="@drawable/shape">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+            android:id="@+id/shdtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Hyper local Distance"
+            android:layout_below="@+id/edtbn"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"/>
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shdtext"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:max="100"/>
+
+     <TextView
+         android:id="@+id/sp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/seekbar"
+         android:text="Select Purpose"
+         android:layout_marginStart="20dp"
+         android:layout_marginTop="30dp"
+         android:textColor="@color/black"
+         android:textStyle="bold"
+         android:textSize="12dp"/>
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp">
+
+        <Button
+            android:layout_height="40dp"
+            android:layout_width="70dp"
+            android:text="coffee"
+            android:textSize="7dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#554E4E"
+            android:backgroundTint="@color/white"/>
+        <Button
+            android:layout_height="40dp"
+            android:layout_width="60dp"
+            android:textSize="7dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Business"
+            android:textColor="#554E4E"
+            android:padding="5dp"/>
+        <Button
+            android:layout_height="40dp"
+            android:layout_width="60dp"
+            android:text="Hobbies"
+            android:textSize="7dp"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="@color/white"
+            android:textColor="#554E4E"/>
+        <Button
+            android:layout_height="40dp"
+            android:layout_width="80dp"
+            android:text="Friendship"
+            android:textSize="7dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="@color/white"
+            android:textColor="#554E4E"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/ll1">
+
+        <Button
+            android:layout_height="40dp"
+            android:layout_width="65dp"
+            android:text="Movies"
+            android:textSize="7dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#554E4E"
+            android:backgroundTint="@color/white"/>
+        <Button
+            android:layout_height="40dp"
+            android:layout_width="60dp"
+            android:textSize="7dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Dinning"
+            android:textColor="#554E4E"
+            android:padding="5dp"/>
+        <Button
+            android:layout_height="40dp"
+            android:layout_width="60dp"
+            android:text="Dating"
+            android:textSize="7dp"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="@color/white"
+            android:textColor="#554E4E"/>
+        <Button
+            android:layout_height="40dp"
+            android:layout_width="80dp"
+            android:text="Matrimony"
+            android:textSize="7dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="@color/white"
+            android:textColor="#554E4E"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ll2"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="70dp"
+        android:text="Sava &amp; Explore"
+        android:backgroundTint="#42207E"
+        android:textColor="@color/white"
+        style="@style/ShapeAppearanceOverlay.Material3.Corner.Bottom"/>
+
+
+</RelativeLayout>
